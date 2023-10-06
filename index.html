@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p>We received your message. Our team will contact you shortly with the solution to your query.</p>
+
+                <div class="clsoebtn">
+                    <button class="close">Okay!!</button>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <div class="topHeader">
+                <a href="#">Logo</a>
+                <div class="rightNav">
+                    <h2>Round One: Practical</h2>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="formWrap">
+
+                <div class="formHeading">
+                    <h1 class="heading-with-strips">Contact Us Form</h1>
+                </div>
+                <div class="form-container">
+                    <div class="form-main-top">
+                        <form id="myForm" class="form-main">
+                            <div class="row form-row-cs">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group form-group-cs">
+                                        <input type="text" class="form-control form-control-cs" id="firstName"
+                                            name="firstName" placeholder="Enter your first name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group form-group-cs">
+                                        <input type="text" class="form-control form-control-cs" id="lastName"
+                                            name="lastName" placeholder="Enter your Last name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group form-group-cs">
+                                        <input type="text" class="form-control form-control-cs" id="phonenumber"
+                                            name="phonenumber" placeholder="Phone Number">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="form-group form-group-cs">
+                                        <input type="text" class="form-control form-control-cs" id="email" name="email"
+                                            placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="form-group form-group-cs">
+                                        <textarea type="text" class="form-control form-control-cs" id="about"
+                                            name="about" placeholder="About Yourself" style="height: 160px;"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="formBtn">
+                                    <button type="submit">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+
+
+                        <div class="floating-sec">
+                            <div class="floating-sec-details">
+                                <p><strong>Office Address</strong> : QUARK ATRIUM, Industrial Area, Sector 74, Sahibzada
+                                    Ajit Singh Nagar, Punjab 160072 </p>
+                            </div>
+
+                            <div class="floating-sec-details">
+                                <p><strong>Mail</strong> : info@codigomantra.com</p>
+                            </div>
+
+                            <div class="floating-sec-details">
+                                <p><strong>Contact </strong>: +91 9915202212</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footerInner">
+                <h2>Assignment</h2>
+                <p>This is your round one for evaluating your skills</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("myForm");
+            const modal = document.getElementById("myModal");
+            const closeButton = document.querySelector(".close");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault(); 
+                modal.style.display = "block";
+            });
+
+            closeButton.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

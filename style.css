@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --commonGradient: linear-gradient(to right, #E7590A, #0C0C0BD9);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper {
+    padding: 10px;
+}
+
+header,
+footer {
+    background-image: var(--commonGradient);
+}
+
+.row {
+    margin: 0;
+}
+
+.topHeader a:hover {
+    color: #fff;
+}
+
+.topHeader {
+    padding: 14px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 4px solid #000;
+}
+
+.topHeader a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.rightNav h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+}
+
+.formHeading h1 {
+    color: #000;
+}
+
+.heading-with-strips {
+    position: relative;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.heading-with-strips::before,
+.heading-with-strips::after {
+    content: "";
+    position: absolute;
+    width: calc(50% - 125px);
+    height: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.heading-with-strips::before {
+    left: 0;
+    margin-left: -1px;
+    background-image: var(--commonGradient);
+}
+
+.heading-with-strips::after {
+    right: 0;
+    margin-right: -1px;
+    background-image: linear-gradient(to right, #0C0C0BD9, #E7590A);
+}
+
+.form-container {
+    padding: 78px 0;
+    margin: 0 12rem;
+}
+
+.form-main {
+    box-shadow: -2px -2px 4px 0px rgba(105, 105, 105, 1);
+    background-color: #D2EBCDB5;
+    width: 100%;
+    max-width: 100%;
+    padding: 50px 100px 36px 28px;
+    border: 1px solid #000;
+    position: relative;
+}
+
+.form-group-cs .form-control-cs {
+    border: 1px solid #000;
+    padding: 8px 12px;
+}
+
+.form-group-cs {
+    padding-bottom: 28px;
+}
+
+.form-group-cs .form-group-cs:focus {
+    outline: none;
+    box-shadow: none !important;
+    box-shadow: 0 !important;
+}
+
+input::placeholder {
+    color: #AAA1A1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-row-cs {
+    position: relative;
+}
+
+.formBtn {
+    position: relative;
+}
+
+.formBtn button {
+    position: absolute;
+    bottom: -55px;
+    left: 50%;
+    transform: translate(-50%);
+    background: #FF7F5B;
+    color: #fff;
+    border: none;
+    padding: 6px 30px;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.floating-sec {
+    position: absolute;
+    top: -24px;
+    right: -210px;
+    max-width: 260px;
+}
+
+.floating-sec-details {
+    background: #BEADFA;
+    border: 1px solid #000;
+    margin-bottom: 90px;
+    padding: 30px 12px;
+    box-shadow: -12px 9px 4px -3px rgba(0, 0, 0, 0.32);
+}
+
+.floating-sec-details p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.floating-sec-details:last-child {
+    margin: 0;
+}
+
+.form-main-top {
+    position: relative;
+    width: 640px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #D9D9D980;
+}
+
+.modal .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 35px 35px 10px;
+    border-radius: 0;
+    width: calc(100% - 420px);
+    width: 310px;
+    border: 2px solid #000;
+    box-shadow: -10px 10px 4px -4px rgba(0, 0, 0, 0.48);
+}
+
+.clsoebtn .close {
+    background: #FF7F5B;
+    border-radius: 4px;
+    padding: 1px 26px;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+
+
+.modal .modal-content p {
+    color: #197D00;
+    font-weight: 600;
+}
+
+.clsoebtn {
+    text-align: center;
+    margin: 22px 0 8px;
+}
+
+.footerInner {
+    padding: 16px;
+    text-align: center;
+}
+
+.footerInner h2 {
+    color: #fff;
+    margin-bottom: 18px;
+    font-size: 1.6rem;
+}
+
+.footerInner p {
+    margin: 0;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:767px) {
+    .topHeader {
+        padding: 8px 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid #000;
+    }
+
+    .topHeader a {
+        font-size: 1.2rem;
+    }
+
+    .rightNav h2 {
+        font-size: 1rem;
+    }
+
+    .heading-with-strips {
+        margin-top: 28px;
+    }
+
+    .form-container {
+        padding: 30px 0;
+        margin: 0 1rem;
+    }
+
+    .formHeading h1 {
+        font-size: 1.2rem;
+    }
+
+    .form-main {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px 24px 30px 24px;
+    }
+
+    .form-main-top {
+        position: relative;
+        width: 100%;
+    }
+
+    .formBtn button {
+        bottom: -48px;
+        font-size: 16px;
+    }
+
+    .floating-sec {
+        margin-top: 50px;
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .floating-sec-details {
+        margin-bottom: 30px;
+    }
+
+    .heading-with-strips::before,
+    .heading-with-strips::after {
+        width: calc(50% - 90px);
+        height: 6px;
+    }
+
+    .modal .modal-content {
+        width: calc(100% - 420px);
+    }
+
+    .footerInner h2 {
+        color: #fff;
+        margin-bottom: 18px;
+        font-size: 1.4rem;
+    }
+}
